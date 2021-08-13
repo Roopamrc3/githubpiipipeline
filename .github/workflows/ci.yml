@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag 992652/backendart:$(date +%s)
-    - name: run docker image
+    
     - name: push to dockerhub
       run: sudo docker push 992652/backendart
     - name: run docker image
